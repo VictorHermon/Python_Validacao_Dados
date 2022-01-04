@@ -22,3 +22,7 @@ class DatasBr:
     def format_date(self):
         data_formatada = self.momento_cadastro.strftime('%d/%m/%Y %H:%M')
         return data_formatada
+
+    def tempo_cadastro(self):
+        tempo_cadastro = datetime.today() - self.momento_cadastro
+        return tempo_cadastro
