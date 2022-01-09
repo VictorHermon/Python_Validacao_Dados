@@ -4,6 +4,6 @@ cep = '06813170'
 
 objeto_cep = BuscaEndereco(cep)
 
-bairro, cidade, uf = objeto_cep.retorna_enederco()
+bairro, cidade, uf = objeto_cep.retorna_endereco()
 
 print(f'Bairro: {bairro} \nCidade: {cidade}, \nUF: {uf}')

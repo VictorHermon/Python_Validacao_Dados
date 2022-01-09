@@ -22,7 +22,7 @@ class BuscaEndereco:
     def format_cep(self):
         return f'{self.cep[:5]}-{self.cep[5:]}'
 
-    def retorna_enederco(self):
+    def retorna_endereco(self):
         url = f'https://viacep.com.br/ws/{self.cep}/json'
         response = requests.get(url)
         bairro_localidade_uf = response.json()
