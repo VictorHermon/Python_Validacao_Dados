@@ -1,12 +1,9 @@
-from datetime import datetime, timedelta
-from datas_br import DatasBr
+from acesso_cep import BuscaEndereco
 
-cadastro = DatasBr()
+cep = '06813170'
 
-print(cadastro.momento_cadastro)
+objeto_cep = BuscaEndereco(cep)
 
-print(cadastro.mes_cadastro())
+bairro, cidade, uf = objeto_cep.retorna_enederco()
 
-print(cadastro.dia_semana())
-
-print(cadastro)
+print(f'Bairro: {bairro} \nCidade: {cidade}, \nUF: {uf}')
